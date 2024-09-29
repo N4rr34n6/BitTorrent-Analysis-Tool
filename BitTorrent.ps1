@@ -37,7 +37,7 @@ param (
 
     if ($asciiPayload -match "Infohash:") {
         # Clean the time string and convert the format
-        $cleanedTime = $fields[1] -replace "Romance Daylight Time", ""
+        $cleanedTime = $fields[1] -replace "Hora de verano romance|Romance Daylight Time|Romance Standard Time", ""
         $timestamp = Get-Date $cleanedTime -Format 'yyyy-MM-dd HH:mm:ss'
         
         # Clean the payload of line breaks
