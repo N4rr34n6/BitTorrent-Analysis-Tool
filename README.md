@@ -79,7 +79,7 @@ a3b5f8d6a1b2c3d4e5f6g7h8i9j0k1l2: 5
 
 ## System Language Considerations
 
-If your system uses a language other than Spanish, you may need to modify the following line in the script to match the system's time zone and format:
+If your system uses a language other than Spanish or English, you may need to modify the following line in the script to match the system's time zone and format:
 
 ```powershell
 $cleanedTime = $fields[1] -replace "Hora de verano romance", ""
